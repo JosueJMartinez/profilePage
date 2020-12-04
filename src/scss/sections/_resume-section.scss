@@ -10,6 +10,13 @@ section.resume-section {
         width: 100%;
     }
 }
+
+#about {
+    background: url(../../assets/img/bg-hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000000px $primary-transparent;
+}
+
 @include media-breakpoint-up(md) {
     section.resume-section {
         min-height: 100vh;
