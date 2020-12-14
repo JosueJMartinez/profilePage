@@ -1,0 +1,40 @@
+.container {
+    background-color: $bg;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.text-primary {
+    color: $text !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.border-secondary {
+    border-color: $secondary !important;
+}
+
+a {
+    color: darken($secondary, 15%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: $secondary;
+    }
+}
+.popover-header {
+    background-color: $last;
+    color: $bg;
+}
+.popover-body {
+    background-color: $primary;
+    color: $secondary;
+}
+
+.container {
+    background-color: $bg;
+}
