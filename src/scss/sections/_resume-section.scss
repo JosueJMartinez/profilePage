@@ -1,17 +1,37 @@
 section.resume-section {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 1rem;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+    // padding-top: 5rem;
+    // padding-bottom: 5rem;
     // max-width: 75rem;
     h2 {
         color: $secondary;
     }
     .resume-section-content {
-        // width: 100%;
-        // color: purple;
+        padding: 0 4rem;
+        h5 {
+            float: right;
+        }
+        .demo-btn {
+            color: $primary;
+            background-color: $last;
+            font-size: 1rem;
+            font-weight: 600;
+            border-color: $last;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            &:hover {
+                color: $last;
+                background-color: $primary;
+            }
+        }
+        .git-btn {
+            float: right;
+            margin-right: 1rem;
+        }
     }
 }
 

@@ -48,9 +48,9 @@ html(lang='en')
                             i.fas.fa-project-diagram
                             |  Projects
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') 
-                            i.fas.fa-briefcase
-                            |  Experience
+                        a.nav-link.js-scroll-trigger(href='#small_demos') 
+                            i.fas.fa-folder-plus
+                            |  Small Demos
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') 
                             i.fas.fa-university
@@ -78,7 +78,7 @@ html(lang='en')
                         a(href='josue.justin.martinez@gmail.com') josue.justin.martinez@gmail.com
                     p.lead.mb-5
                         | An enthusiastic person who likes a challenge in programming
-                        | specifically in back or front-end web development. I have a
+                        | specifically in back-end or front-end web development. I have a
                         | good understanding of the fundamentals of OOP, relational, and
                         | non-relational databases. I enjoy experimenting with UI/UX for
                         | fun.
@@ -90,9 +90,7 @@ html(lang='en')
                         a.social-icon(href='https://www.facebook.com/josueycc')
                             i.fab.fa-facebook-f
 
-            hr.m-0
-
-            // Experience
+            // Projects
             section#projects.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
                .resume-section-content.row
                     h2.mb-5.col-12 Projects
@@ -100,13 +98,27 @@ html(lang='en')
                     //- .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                     .col-lg-6
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h3.mb-0 Color Palette Demo in React
+                            p
+                                | Notable technologies used to build this: react, react-router-dom, material-ui, and chroma-js. 
+                            
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/colors-palette-react') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/colors-palette-react/') Demo
+
+                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
                             h3.mb-0 Post-Blog React Demo
                             p
                                 | Built a React Front End Web App with a pre-existing REST
-                                | API web server. Modeled it as a Single Page Application and
-                                | had to work with Axios (AJAX). Understanding how to use
-                                | React to give user a good experience.
-                            a.demo.btn.btn-primary.btn-sm(href='https://reactappjosue.netlify.app/') Demo
+                                | API web server. Modeled it as a Single Page Application and 
+                                | understanding how to use React to give user a good experience.
+                                | Notable technologies were Axios, React, react-router-dom, and react-moment.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/ReactDemoBlogApp') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://reactappjosue.netlify.app/') Demo
                     
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
                             h3.mb-0 Profile Site
@@ -114,19 +126,25 @@ html(lang='en')
                                 | Demonstrates ability to design and build UI websites, and
                                 | integrate JS, SCSS, or SASS packages if needed. Used
                                 | Bootstrap framework to make mobile friendly. Applied other
-                                | plugins when necessary.
-                    
+                                | plugins when necessary. Notable technologies used were Bootstrap,
+                                | AOS, SCSS, Typewriter, Pug, Grunt, and Gulp.
+                        
+                    .col-lg-6
+
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
                             h3.mb-0 Dynamic Web App Demo
                             p
                                 | Demo App that demonstrates ability to design and build
-                                | dynamic web apps for the internet. This app is built with
-                                | MEN (mongoDB, Express, Node.js) stack. Integrate API's and
+                                | dynamic web apps for the internet. Integrate API's and
                                 | using REST software architectural style and is mobile
-                                | friendly.
-                            a.demo.btn.btn-primary.btn-sm(href='https://demowebcampapp.herokuapp.com/') Demo
-                        
-                    .col-lg-6
+                                | friendly. Notable technologies used are: ejs, googlesapis,
+                                | node-geocoder, passport, cloudinary, and nodemailer.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/campWebApp') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://demowebcampapp.herokuapp.com/') Demo
+
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
                             h3.mb-0 Salesforce Custom App
                             p
@@ -136,7 +154,7 @@ html(lang='en')
                                 | scratch. Also administrative work such as building reports,
                                 | dashboards, or making new users, and profiles.
                     
-                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                        .flex-grow-1.resume-item.pb-1.mb-3
                             h3.mb-0 Database Designs in MySQL, and PostgreSQL
                             p
                                 | Worked with Java and PostgreSQL to practice and build
@@ -149,137 +167,123 @@ html(lang='en')
                                 | difference syntactically of how to connect with different
                                 | databases with different languages.
                         
-            hr.m-0
-
-            // Experience
-            section#experience.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
+            // Small Demos
+            section#small_demos.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
                 .resume-section-content.row
-                    h2.mb-5.col-12 Experience
+                    h2.mb-5.col-12 Small Demos
 
                     //- .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                     .col-lg-6
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Computer Technician
-                            .subheading.mb-3 CDW, Vernon Hills Il
-                            ul
-                                li
-                                    | Daily deployment of 20-30 SSCM and LANDesk Images for
-                                    | various companies across the United States
-                                li
-                                    | Do various adjustments for customers (bio settings, join
-                                    | domains, new asset tags, new users to groups, driver
-                                    | updates, and bit locker encryptions)
-                                li
-                                    | Tend to work with customers to resolve issues  
-                                li
-                                    | Hardware and Software installments
-
-                        .flex-shrink-0
-                            span.text-primary 1/1/2019 - Current
-                    
-                    
-                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Computer Technician / Help Desk
-                            .subheading.mb-3 FR Technologies, Chicago Il
-                            ul
-                                li
-                                    | Provided on call and remote login for computer to server
-                                    | problems
-                                li
-                                    | Installed network systems involving surveillance
-                                li  
-                                    | Worked with third parties on how to do updates of systems
-
-                        .flex-shrink-0
-                            span.text-primary 7/2018 - 12/2018
+                            h3.mb-0 Note App
+                            p
+                                | Notable technologies used to build this: react and material-ui.
+                            
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/NoteReactApp2') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/NoteReactApp2/') Demo
 
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Accountant / Caretaker
-                            .subheading.mb-3 Iglesia de San José del Matorral, SLP, México
-                            ul
-                                li
-                                    | Took care of the finances of the church including
-                                    | donations/expenses.
-                                li
-                                    | Helped organize various events as well as create donation
-                                    | advertisements.
-                                li  
-                                    | Helped with renovation projects for the church
-                                    | (rooms/roofs/bathrooms).
-                                li
-                                    | Repaired various electrical problems as well created new
-                                    | electrical circuits for new rooms.
+                            h3.mb-0 Simple Pokemon Game
+                            p
+                                | Simple game that retrieves data from PokeAPI for two teams of 4 pokemon.
+                                | Technologies used: Axios, react-card-flipper, react, and chroma-js.
 
-                        .flex-shrink-0
-                            span.text-primary 5/2013 - 5/2018
-
-                    .col-lg-6
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/ReactPokedex') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/ReactPokedex/') Demo
                     
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Quality Assurance Engineer Intern
-                            .subheading.mb-3 Novarra, Itasca Il
-                            ul
-                                li
-                                    | Led QA teams in Server &amp; Client upgrades related to Brew
-                                    | application development platform
-                                li
-                                    | Tested start pages and live sites for demo release builds
-                                    | for clients that service 25 different markets worldwide
-                                li  
-                                    | Developed and written new test cases for new builds and
-                                    |features
-                                li
-                                    | Cross platform testing of app through various phones
+                            h3.mb-0 Dice Roller Game
+                            p
+                                | Simple Dice Game when starting to learn React
 
-                        .flex-shrink-0
-                            span.text-primary 6/2006 - 6/2009
-                    
-                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Student Teacher Assistant
-                            .subheading.mb-3 ESP, UIC Chicago Il
-                            ul
-                                li
-                                    | Assisting the instructor in a calculus workshop
-                                li
-                                    | Mentor and provide general guidance in Mathematics
-                                    | (Calculus I and II)
-                                li  
-                                    | Motivating and persuading students to consider
-                                    | engineering as a career
-
-                        .flex-shrink-0
-                            span.text-primary 5/2005 - 6/2007
-                    
-                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Instructor
-                            .subheading.mb-3 MERRP, UIC Chicago Il
-                            ul
-                                li
-                                    | Facilitate a College Algebra and Calculus 2 workshop to
-                                    | minority engineering students
-                                li
-                                    | Developed a schedule and lectures based on Courses being
-                                    | presented by professors
-
-                        .flex-shrink-0
-                            span.text-primary 5/2005 - 6/2008
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/dice-roller') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/dice-roller/') Demo
                         
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Instructor
-                            .subheading.mb-3 CAHSEE, Boston Ma
-                            ul
-                                li
-                                    | Taught a college-level course in Physics to a group of 20
-                                    | talented students enrolled in junior high schools
-                                li
-                                    | Motivated and encouraged students to enhance their
-                                    | intellectual abilities in the fields of science and
-                                    | mathematics to eventually pursue a degree in engineering
-                                
-                        .flex-shrink-0
-                            span.text-primary Summer 2004
+                            h3.mb-0 Yahtzee
+                            p
+                                | Another game built in React. Simple game with many moving parts to keep track.
+                                | Specifically when the state of the game is rolling need to make sure most components can
+                                | not be clicked to not break. Only notable technology used is React.
 
-            hr.m-0
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/react-yahtzee') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/react-yahtzee/') Demo
+
+                        .flex-grow-1.resume-item.pb-1.mb-3
+                            h3.mb-0 Lights Out
+                            p
+                                | Another game demo about the game Lights Out. Mainly built just to get a better handling
+                                | of the concepts of React. 
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/react-lights-out') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/react-lights-out/') Demo
+                                            
+                    .col-lg-6
+    
+                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h3.mb-0 To Do List
+                            p
+                                | App that is similar to Note Application App but in a list concept.
+                                | Notable technologies used are just React and UUID.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/react-to-do-list') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/react-to-do-list/') Demo
+
+                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h3.mb-0 Material-UI List
+                            p
+                                | App is similar to the To Do List App. Learned to reorganize code with new React features hooks, contexts, and reducers.
+                                | Minimize pass down values through components. Notable technologies just React and Material-UI.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/material-ui-to-do-function-comp') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/material-ui-to-do-function-comp/') Demo
+
+                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h3.mb-0 Jokes App
+                            p
+                                | Simple Jokes Application that interacts with a Joke API server to get random jokes.
+                                | Notable technologies besides React is just Axios.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/dad-jokes-react') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/dad-jokes-react/') Demo
+
+                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h3.mb-0 Hangman Game
+                            p
+                                | Just a simple hangman game. Made a little complicated and introduced 3rd-party API to get random words.
+                                | Notable technologies are just React and Axios.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/hangman') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/hangman/') Demo                        
+
+                        .flex-grow-1.resume-item.pb-1.mb-3
+                            h3.mb-0 Login Example
+                            p
+                                | Simple React Components for login screen. Used built-in features context and hooks to minimize code.
+                                | Notable technologies are just React and Material-UI.
+
+                            a.demo-btn.btn.btn-primary.btn-sm.git-btn(href='https://github.com/JosueJMartinez/login-screen-with-context') 
+                                i.fab.fa-github 
+                                | Github
+                            a.demo-btn.btn.btn-primary.btn-sm(href='https://josuejmartinez.github.io/login-screen-with-context/') Demo      
 
             // Education
             section#education.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
@@ -287,19 +291,18 @@ html(lang='en')
                     h2.mb-5.col-12 Education &amp; Certifications
 
                     //- .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                    .col-lg-6
+                    .col-12
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h5 Dec 2019
                             h3.mb-0 Certified Salesforce.com Administrator
-                        .flex-shrink-0
-                            span.text-primary Dec 2019
-                        
-                        .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
-                            h3.mb-0 Certified Associate ORACLE Java SE 8
-                        .flex-shrink-0
-                            span.text-primary April 2019
 
                         .flex-grow-1.resume-item.border-bottom.border-secondary.pb-1.mb-3
+                            h5 April 2019
+                            h3.mb-0 Certified Associate ORACLE Java SE 8
+                        
+                        .flex-grow-1.resume-item.pb-1.mb-3
                             .flex-grow-1
+                                h5 Grad 2007
                                 h3.mb-0 University of Illinois at Chicago
                                 .subheading.mb-3 Bachelor of Science - Computer Engineering
                                 ul.card-text
@@ -313,59 +316,54 @@ html(lang='en')
                                         | Enjoyed teaching others in mathematics and generic concepts
                                         | OOP and Functional Programming
 
-                            .flex-shrink-0
-                                span.text-primary Graduated 2007
-
-            hr.m-0
-
             // Skills
             section#skills.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
                 .resume-section-content.row
                     h2.mb-5.col-12 Skills
                     .col-12
-                        .subheading.mb-3 Programming Languages & Tools
+                        h3 Programming Languages & Tools
                         ul.list-inline.dev-icons
                             li.list-inline-item
-                                i.fab.fa-java
+                                i.fab.fa-java.dev-icon
                             li.list-inline-item
-                                i.fab.fa-salesforce
+                                i.fab.fa-salesforce.dev-icon
                             li.list-inline-item
-                                i.fab.fa-html5
+                                i.fab.fa-html5.dev-icon
                             li.list-inline-item
-                                i.fab.fa-css3-alt
+                                i.fab.fa-css3-alt.dev-icon
                             li.list-inline-item
-                                i.fab.fa-js-square
+                                i.fab.fa-js-square.dev-icon
                             li.list-inline-item
-                                i.fab.fa-bootstrap
+                                i.fab.fa-bootstrap.dev-icon
                             li.list-inline-item
-                                i.fab.fa-sass
+                                i.fab.fa-sass.dev-icon
                             li.list-inline-item
-                                i.devicon-jquery-plain
+                                i.devicon-jquery-plain.dev-icon
                             li.list-inline-item
-                                i.fab.fa-node-js
+                                i.fab.fa-node-js.dev-icon
                             li.list-inline-item
-                                i.devicon-express-original
+                                i.devicon-express-original.dev-icon
                             li.list-inline-item
-                                i.devicon-react-original
+                                i.devicon-react-original.dev-icon
                             li.list-inline-item
-                                i.fab.fa-npm
+                                i.fab.fa-npm.dev-icon
                             li.list-inline-item
-                                i.devicon-webpack-plain
+                                i.devicon-webpack-plain.dev-icon
                             li.list-inline-item
-                                i.fab.fa-gulp
+                                i.fab.fa-gulp.dev-icon
                             li.list-inline-item
-                                i.fab.fa-grunt
+                                i.fab.fa-grunt.dev-icon
                             li.list-inline-item
-                                i.devicon-mongodb-plain
+                                i.devicon-mongodb-plain.dev-icon
                             li.list-inline-item
-                                i.devicon-mysql-plain
+                                i.devicon-mysql-plain.dev-icon
                             li.list-inline-item
-                                i.devicon-postgresql-plain
+                                i.devicon-postgresql-plain.dev-icon
                             li.list-inline-item
-                                i.devicon-heroku-plain
+                                i.devicon-heroku-plain.dev-icon
                             li.list-inline-item
-                                i.devicon-git-plain
-                        .subheading.mb-3 Workflow
+                                i.devicon-git-plain.dev-icon
+                        h3 Workflow
                         ul.fa-ul.mb-0
                             li
                                 span.fa-li
@@ -393,7 +391,6 @@ html(lang='en')
                                 span.fa-li
                                     i.fas.fa-check
                                 | Bilingual English & Spanish
-            hr.m-0
 
             // Interests
             section#interests.resume-section.p-3.d-flex.align-items-center.justify-content-center.container.mt-3.rounded
@@ -403,7 +400,7 @@ html(lang='en')
                         | After graduating from the University of Illinois at Chicago
                         | I spent ten years in my rural hometown in Mexico. I spent
                         | time helping build house and electrical infrastructures. I
-                        | have returned to the USA recently and currently
+                        | have returned to the United States recently and currently
                         | looking to help out in web develpoment projects. My
                         | interests lie in web development and looking to build and
                         | grow with a team of like-minded individuals. I like
@@ -415,9 +412,6 @@ html(lang='en')
                         | soccer and go to any festivals in the Chicagoland area.
                         | During the winter and this COVID-19 pandemic we are in, I enjoy
                         | practicing and playing the cello and bass guitar.
-                    
-
-            hr.m-0
            
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')

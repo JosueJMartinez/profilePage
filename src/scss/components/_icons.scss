@@ -16,7 +16,7 @@
             margin-right: 0;
         }
         &:hover {
-            background-color: $primary;
+            background-color: $secondary;
         }
     }
 }
@@ -24,4 +24,9 @@
 // Styling for the development technology icons
 .dev-icons {
     font-size: 3rem;
+    color: $secondary;
+}
+
+.dev-icon:hover {
+    color: $primary;
 }
