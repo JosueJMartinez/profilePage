@@ -12,6 +12,7 @@
         "console.log('Hello World!');",
         "<p>Hello World!</p>",
         'System.out.println("Hello World!");',
+        'echo "Hello World!"',
     ];
 
     // Speed (in milliseconds) of typing.
