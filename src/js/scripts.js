@@ -4,8 +4,7 @@
     // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
     var i = 0,
         a = 0,
-        isBackspacing = false,
-        isParagraph = false;
+        isBackspacing = false;
 
     // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
     var textArray = [
@@ -18,7 +17,6 @@
     // Speed (in milliseconds) of typing.
     var speedForward = 50, //Typing Speed
         speedWait = 1000, // Wait between typing and backspacing
-        speedBetweenLines = 100, //Wait between first and second lines
         speedBackspace = 10; //Backspace Speed
 
     typeWriter("typewriter", textArray);
@@ -58,7 +56,6 @@
             } else {
                 isBackspacing = false;
                 i = 0;
-                isParagraph = false;
                 a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
                 setTimeout(function () {
                     typeWriter(id, ar);
