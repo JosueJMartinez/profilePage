@@ -1,5 +1,5 @@
 section.resume-section {
-    display: flex;
+    // display: flex;
     align-items: center;
     padding: 5rem 1rem;
     // padding-left: 1rem;
@@ -11,7 +11,7 @@ section.resume-section {
         color: $secondary;
     }
     .resume-section-content {
-        padding: 0 4rem;
+        // padding: 0 4rem;
         h5 {
             float: right;
         }
@@ -41,6 +41,10 @@ section.resume-section {
     box-shadow: inset 0 0 0 2000000px $primary-transparent;
 }
 
+.border-sm {
+    border-bottom: 1px solid $secondary !important;
+}
+
 @include media-breakpoint-up(md) {
     section.resume-section {
         min-height: 100vh;
@@ -52,5 +56,15 @@ section.resume-section {
         padding-right: 3rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
+        .border-sm {
+            border-bottom: 0px solid $secondary !important;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
     }
 }

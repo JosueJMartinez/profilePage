@@ -23,11 +23,12 @@
 
     function typeWriter(id, ar) {
         var eType = $("#" + id),
+            eCursor = eType.children("h3"),
             aString = ar[a];
         if (!isBackspacing) {
             // If full string hasn't yet been typed out, continue typing
             if (i < aString.length) {
-                eType.text(eType.text() + aString.charAt(i));
+                eCursor.text(eCursor.text() + aString.charAt(i));
                 i++;
                 setTimeout(function () {
                     typeWriter(id, ar);
@@ -42,10 +43,10 @@
             // If backspacing is enabled
         } else {
             // If either the header or the paragraph still has text, continue backspacing
-            if (eType.text().length > 0) {
-                if (eType.text().length > 0) {
-                    eType.text(
-                        eType.text().substring(0, eType.text().length - 1)
+            if (eCursor.text().length > 0) {
+                if (eCursor.text().length > 0) {
+                    eCursor.text(
+                        eCursor.text().substring(0, eCursor.text().length - 1)
                     );
                 }
                 setTimeout(function () {
