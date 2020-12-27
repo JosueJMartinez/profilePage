@@ -23,6 +23,7 @@ section.resume-section {
             border-color: $last;
             margin-bottom: 1rem;
             margin-left: 1rem;
+            transition: all 0.3s ease;
             &:hover {
                 color: $last;
                 background-color: $primary;
