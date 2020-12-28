@@ -1,71 +1,71 @@
 section.resume-section {
-    // display: flex;
-    align-items: center;
-    padding: 5rem 1rem;
-    // padding-left: 1rem;
-    // padding-right: 1rem;
-    // padding-top: 5rem;
-    // padding-bottom: 5rem;
-    // max-width: 75rem;
-    h2 {
-        color: $secondary;
+  // display: flex;
+  align-items: center;
+  padding: 5rem 1rem;
+  // padding-left: 1rem;
+  // padding-right: 1rem;
+  // padding-top: 5rem;
+  // padding-bottom: 5rem;
+  // max-width: 75rem;
+  h2 {
+    color: $secondary;
+  }
+  .resume-section-content {
+    // padding: 0 4rem;
+    h5 {
+      float: right;
     }
-    .resume-section-content {
-        // padding: 0 4rem;
-        h5 {
-            float: right;
-        }
-        .demo-btn {
-            color: $primary;
-            background-color: $last;
-            font-size: 1rem;
-            font-weight: 600;
-            border-color: $last;
-            margin-bottom: 1rem;
-            margin-left: 1rem;
-            transition: all 0.3s ease;
-            &:hover {
-                color: $last;
-                background-color: $primary;
-            }
-        }
-        .git-btn {
-            float: right;
-            margin-right: 1rem;
-        }
+    .demo-btn {
+      color: $primary;
+      background-color: $last;
+      font-size: 1rem;
+      font-weight: 600;
+      border-color: $last;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $last;
+        background-color: $primary;
+      }
     }
+    .git-btn {
+      float: right;
+      margin-right: 1rem;
+    }
+  }
 }
 
 #about {
-    background: url(../../assets/img/bg-hero.jpg) no-repeat center center fixed;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000000px $primary-transparent;
+  background: url(../../assets/img/bg-hero.jpg) no-repeat center center fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000000px $primary-transparent;
 }
 
 .border-sm {
-    border-bottom: 1px solid $secondary !important;
+  border-bottom: 1px solid $secondary !important;
 }
 
 @include media-breakpoint-up(md) {
-    section.resume-section {
-        min-height: 100vh;
-    }
+  section.resume-section {
+    min-height: 100vh;
+  }
 }
 @include media-breakpoint-up(lg) {
-    section.resume-section {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        .border-sm {
-            border-bottom: 0px solid $secondary !important;
-        }
+  section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .border-sm {
+      border-bottom: 0px solid $secondary !important;
     }
+  }
 }
 
 @include media-breakpoint-down(sm) {
-    h1 {
-        font-size: 4rem;
-        line-height: 3.5rem;
-    }
+  h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
 }
