@@ -63,6 +63,10 @@
     }
   }
 
+  function bounce(e) {
+    console.log("hello fro icon");
+  }
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on("click", function () {
     if (
@@ -83,6 +87,10 @@
         return false;
       }
     }
+  });
+
+  $(".dev-icons svg").on("click", function () {
+    console.log("hello");
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
